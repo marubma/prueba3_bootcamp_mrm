@@ -1,9 +1,9 @@
 public class Main {
     public static void main(String[] args) {
        Persona persona = new Persona();
-       persona.setEdad("28");
+       persona.setEdad(28);
        persona.setNombre("Marta");
-       persona.setTelefono("000000000");
+       persona.setTelefono(696780999);
        System.out.println(persona.getEdad());
        System.out.println(persona.getNombre());
        System.out.println(persona.getTelefono());
@@ -13,13 +13,13 @@ public class Main {
 
 
 class Persona {
-    private String edad;
+    private int edad;
     private String nombre;
-    private String telefono;
-    public void setEdad(String valor) {
+    private int telefono;
+    public void setEdad(int valor) {
         this.edad = valor;
     }
-    public String getEdad() {
+    public int getEdad() {
         return this.edad;
     }
     public void setNombre(String valor) {
@@ -28,10 +28,10 @@ class Persona {
     public String getNombre(){
         return this.nombre;
     }
-    public void setTelefono(String valor) {
+    public void setTelefono(int valor) {
         this.telefono = valor;
     }
-    public String getTelefono() {
+    public int getTelefono() {
         return this.telefono;
     }
 }
